@@ -1,11 +1,13 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
+
+import { AuthProvider } from "./Contexts/AuthContext";
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <AuthProvider>
+      <div className="App">Hello world</div>
+    </AuthProvider>
   );
 }
 
