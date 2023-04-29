@@ -1,0 +1,32 @@
+@use "../../../../../Styles/mixins" as *;
+@use "../../../../../Styles/variables" as *;
+
+.container-logo {
+  @include widthAndHeight(25%, 15%);
+  @include flexContainer(20px);
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%);
+  border-bottom-left-radius: 2vw;
+  border-bottom-right-radius: 2vw;
+  z-index: 1000;
+
+  background-color: $mainBlueColor;
+
+  p {
+    font-size: 4vw;
+  }
+
+  div {
+    @include widthAndHeight(15%, 40%);
+    @include flexContainer(0);
+
+    img {
+      @include widthAndHeight(100%, 100%);
+      mix-blend-mode: multiply;
+    }
+  }
+}
+
+//correct all

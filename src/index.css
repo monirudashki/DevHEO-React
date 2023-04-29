@@ -58,3 +58,7 @@ textarea,
 select {
   font: inherit;
 }
+
+body {
+  background: #0E0D2A;
+}

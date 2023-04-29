@@ -1,0 +1,12 @@
+@use "../../../../../Styles/mixins" as *;
+@use "../../../../../Styles/variables" as *;
+
+.navbar {
+  @include widthAndHeight(100%, auto);
+  @include flexContainer(40%);
+
+  div {
+    @include widthAndHeight(20%, auto);
+    @include flexContainer(0);
+  }
+}

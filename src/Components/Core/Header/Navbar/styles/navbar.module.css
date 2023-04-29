@@ -1,0 +1,16 @@
+.navbar {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40%;
+}
+.navbar div {
+  width: 20%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}/*# sourceMappingURL=navbar.module.css.map */

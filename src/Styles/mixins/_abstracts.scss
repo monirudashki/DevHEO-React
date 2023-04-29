@@ -1,0 +1,20 @@
+@mixin widthAndHeight($width, $heigh) {
+  width: $width;
+  @if ($heigh) {
+    height: $heigh;
+  }
+}
+
+@mixin flexContainer($gap) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $gap;
+}
+
+@mixin absolutePosition($vertical, $horizontal) {
+  position: absolute;
+  top: $vertical;
+  left: $horizontal;
+  transform: translate(-$vertical, -$horizontal);
+}
