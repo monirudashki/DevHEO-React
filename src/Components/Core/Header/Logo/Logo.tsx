@@ -7,10 +7,7 @@ const Logo = () => {
   return (
     <div className={styles["container-logo"]}>
       <p>Dev</p>
-      <div>
-        <img src={String(logo)} alt="logo" />
-      </div>
-      <p>HEO</p>
+      <span>HEO</span>
     </div>
   );
 };

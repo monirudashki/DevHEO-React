@@ -60,5 +60,8 @@ select {
 }
 
 body {
-  background: #0E0D2A;
+  background: radial-gradient(circle at 40% 40%, #565656 25%, transparent 26%), radial-gradient(circle at 60% 60%, #56565680 25%, transparent 26%);
+  background-size: 5em 5em;
+  background-color: #1f1f24;
+  opacity: 0.95
 }

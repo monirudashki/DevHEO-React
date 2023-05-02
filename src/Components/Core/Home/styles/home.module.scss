@@ -1,0 +1,108 @@
+@use "../../../../Styles/mixins" as *;
+@use "../../../../Styles/variables" as *;
+
+.home-container {
+  @include widthAndHeight(100%, 100vh);
+  @include flexContainer(8%);
+  //background-color: whitesmoke;
+}
+
+.posts-container {
+  @include widthAndHeight(25%, 100vh);
+  background: $mainBlueColor;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(14.5px);
+  -webkit-backdrop-filter: blur(14.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.info-container {
+  @include widthAndHeight(50%, 80vh);
+  position: relative;
+}
+
+.about-site-wrapper {
+  @include widthAndHeight(55%, 45vh);
+  @include flexContainer(0);
+  flex-direction: column;
+  justify-content: flex-start;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+
+  header {
+    @include widthAndHeight(100%, 10%);
+    @include flexContainer(0);
+    background-color: darkgray;
+
+    h2 {
+      font-size: 32px;
+    }
+  }
+
+  main {
+    @include widthAndHeight(100%, 30%);
+    background: lightgray;
+
+    p {
+      text-align: center;
+      padding: 20px;
+    }
+  }
+
+  footer {
+    @include widthAndHeight(100%, 60%);
+    @include flexContainer(0);
+
+    img {
+      @include widthAndHeight(100%, 100%);
+      object-fit: cover;
+    }
+  }
+}
+
+.about-skills-wrapper {
+  @include widthAndHeight(55%, 45vh);
+  background: lightgreen;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 10%;
+  overflow: hidden;
+
+  header {
+    @include widthAndHeight(100%, 10%);
+    @include flexContainer(0);
+    background-color: darkgray;
+
+    h2 {
+      font-size: 32px;
+    }
+  }
+
+  main {
+    @include widthAndHeight(100%, 30%);
+    background: lightgray;
+
+    p {
+      text-align: center;
+      padding: 20px;
+    }
+  }
+
+  footer {
+    @include widthAndHeight(100%, 60%);
+    @include flexContainer(0);
+
+    img {
+      @include widthAndHeight(100%, 100%);
+      object-fit: cover;
+    }
+  }
+
+  &:hover {
+    z-index: 2;
+  }
+}

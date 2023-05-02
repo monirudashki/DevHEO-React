@@ -7,6 +7,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "Components/Core/Home/HomeComponent/Home";
 import Login from "Components/Auth/Login/Login";
 import Register from "Components/Auth/Register/Register";
+import Footer from "Components/Core/Footer/FooterComponent/Footer";
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
           <Route path="/auth/login" element={<Login />} />
           <Route path="/auth/register" element={<Register />} />
         </Routes>
+
+        <Footer />
       </div>
     </AuthProvider>
   );

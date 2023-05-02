@@ -1,0 +1,124 @@
+.home-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8%;
+}
+
+.posts-container {
+  width: 25%;
+  height: 100vh;
+  background: rgba(0, 119, 215, 0.8);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(14.5px);
+  -webkit-backdrop-filter: blur(14.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.info-container {
+  width: 50%;
+  height: 80vh;
+  position: relative;
+}
+
+.about-site-wrapper {
+  width: 55%;
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+.about-site-wrapper header {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  background-color: darkgray;
+}
+.about-site-wrapper header h2 {
+  font-size: 32px;
+}
+.about-site-wrapper main {
+  width: 100%;
+  height: 30%;
+  background: lightgray;
+}
+.about-site-wrapper main p {
+  text-align: center;
+  padding: 20px;
+}
+.about-site-wrapper footer {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.about-site-wrapper footer img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about-skills-wrapper {
+  width: 55%;
+  height: 45vh;
+  background: lightgreen;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 10%;
+  overflow: hidden;
+}
+.about-skills-wrapper header {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  background-color: darkgray;
+}
+.about-skills-wrapper header h2 {
+  font-size: 32px;
+}
+.about-skills-wrapper main {
+  width: 100%;
+  height: 30%;
+  background: lightgray;
+}
+.about-skills-wrapper main p {
+  text-align: center;
+  padding: 20px;
+}
+.about-skills-wrapper footer {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.about-skills-wrapper footer img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about-skills-wrapper:hover {
+  z-index: 2;
+}/*# sourceMappingURL=home.module.css.map */

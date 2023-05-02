@@ -7,6 +7,7 @@ import { NavLink, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faDoorOpen } from "@fortawesome/free-solid-svg-icons";
 import { AuthContext } from "Contexts/AuthContext";
+import Logo from "../Logo/Logo";
 const homeIcon = <FontAwesomeIcon icon={faHome} />;
 const logOutIcon = <FontAwesomeIcon icon={faDoorOpen} />;
 
@@ -22,14 +23,23 @@ export const Navbar = () => {
 
   return (
     <nav className={styles["navbar"]}>
-      <div>
-        <NavLink to={"/"}>{homeIcon}</NavLink>
+      <div className={styles["logo"]}>
+        <Logo />
       </div>
-      <div>
-        <NavLink to={"/auth/login"}>Log in</NavLink>
-        <NavLink to={"/auth/register"}>Sign in</NavLink>
+      <div className={styles["links"]}>
+        <NavLink className={styles["link"]} to={"/"}>
+          {homeIcon}
+        </NavLink>
+        <NavLink className={styles["link"]} to={"/auth/login"}>
+          Log in
+        </NavLink>
+        <NavLink className={styles["link"]} to={"/auth/register"}>
+          Sign in
+        </NavLink>
+        <Link className={styles["link"]} to={"/auth/logout"}>
+          {logOutIcon}
+        </Link>
       </div>
-      {/* <Link to={"/auth/logout"}>{logOutIcon}</Link> */}
     </nav>
   );
 };

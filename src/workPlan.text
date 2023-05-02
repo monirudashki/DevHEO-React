@@ -1,8 +1,8 @@
-scss folders -> variables , mixin , class to extend
+scss folders -> variables , mixin , class to extend , breakpoints 
 
 Background App - (glass , black or black with transparent)
 
-template for homePage
+template for homePage - ready
 
 Header
 Logo - DevHEO (In the start only with html and css , next possible image with icon)
@@ -10,8 +10,7 @@ NavBar - Elipse dark blue or close to blue color , logo in the middle , on left 
 just Log in and sign in links
 
 Footer - Project by Simeon Rudashki on left side , on right side other links with icons (possible animated) to follow
+in the center use tehniques
 
-Home - on left side catalog of posts (only section for now) , right side - two parts , top skills section (image of different skills for development ,
-h2 with title , and short description) different color of text for every
-bottom - image with developer on the pc , title h1 , and description 
-*try to use semantic html (with main , section , aside , article...) 
+
+Home - font family , correct blue color(maybe more light blue with rngb), correct paragraph,  
