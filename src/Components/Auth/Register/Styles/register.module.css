@@ -1,0 +1,153 @@
+.form-section-container, .register-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  background-color: rgb(16, 16, 18);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.input-group {
+  position: relative;
+}
+.input-group .input {
+  border: solid 1.5px white;
+  border-radius: 1rem;
+  background: none;
+  padding: 1rem;
+  font-size: 1rem;
+  color: white;
+  transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input-group .user-label {
+  position: absolute;
+  left: 15px;
+  color: white;
+  pointer-events: none;
+  transform: translateY(1rem);
+  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input-group .input:focus,
+.input-group .input:valid {
+  outline: none;
+  border: 1.5px solid rgba(0, 119, 215, 0.8);
+}
+.input-group .input:focus ~ label,
+.input-group .input:valid ~ label {
+  transform: translateY(-50%) scale(0.8);
+  background-color: #212121;
+  padding: 0 0.2em;
+  color: rgba(0, 119, 215, 0.8);
+}
+
+.register-wrapper {
+  width: 55%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  border-radius: 20px;
+  border: 1px solid white;
+  z-index: 10;
+  overflow: hidden;
+  position: relative;
+}
+.register-wrapper .img-side {
+  width: 50%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  margin-top: 100px;
+  flex-direction: column;
+}
+.register-wrapper .img-side div {
+  width: 80%;
+  height: 80%;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 119, 215, 0.8);
+  overflow: hidden;
+}
+.register-wrapper .img-side div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.register-wrapper .img-side input {
+  width: 50%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  margin-top: 30px;
+}
+.register-wrapper .form-side {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  margin-top: 100px;
+}
+.register-wrapper .form-side form {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-direction: column;
+}
+.register-wrapper .form-side form p {
+  color: rgb(189, 18, 18);
+}
+.register-wrapper .form-side form :last-child {
+  color: white;
+}
+.register-wrapper .form-side form .link {
+  color: rgba(0, 119, 215, 0.8);
+  text-decoration: none;
+}
+.register-wrapper .form-side .input-group {
+  position: relative;
+}
+.register-wrapper .form-side .input-group .input {
+  border: solid 1.5px white;
+  border-radius: 1rem;
+  background: none;
+  padding: 1rem;
+  font-size: 1rem;
+  color: white;
+  transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.register-wrapper .form-side .input-group .user-label {
+  position: absolute;
+  left: 15px;
+  color: white;
+  pointer-events: none;
+  transform: translateY(1rem);
+  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.register-wrapper .form-side .input-group .input:focus,
+.register-wrapper .form-side .input-group .input:valid {
+  outline: none;
+  border: 1.5px solid rgba(0, 119, 215, 0.8);
+}
+.register-wrapper .form-side .input-group .input:focus ~ label,
+.register-wrapper .form-side .input-group .input:valid ~ label {
+  transform: translateY(-50%) scale(0.8);
+  background-color: #212121;
+  padding: 0 0.2em;
+  color: rgba(0, 119, 215, 0.8);
+  font-size: 20px;
+}/*# sourceMappingURL=register.module.css.map */

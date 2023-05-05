@@ -1,0 +1,112 @@
+@use "../../../../Styles/variables" as *;
+@use "../../../../Styles/mixins" as *;
+@use "../../../../Styles/extends/" as *;
+
+.register-container {
+  @extend .form-section-container;
+}
+
+.register-wrapper {
+  @include widthAndHeight(55%, 70%);
+  @include flexContainer(0);
+  border-radius: 20px;
+  border: 1px solid $mainWhiteColor;
+  z-index: 10;
+  overflow: hidden;
+  position: relative;
+
+  .img-side {
+    @include widthAndHeight(50%, 70%);
+    @include flexContainer(0);
+    margin-top: 100px;
+    flex-direction: column;
+
+    div {
+      @include widthAndHeight(80%, 80%);
+      border-radius: 20px;
+      border: 1px solid $mainBlueColor;
+      overflow: hidden;
+
+      img {
+        @include widthAndHeight(100%, 100%);
+        object-fit: cover;
+      }
+    }
+
+    input {
+      @include widthAndHeight(50%, 20%);
+      @include flexContainer(20px);
+      color: $mainWhiteColor;
+      margin-top: 30px;
+    }
+  }
+
+  .form-side {
+    @include widthAndHeight(50%, 80%);
+    @include flexContainer(0);
+    margin-top: 100px;
+
+    form {
+      @include widthAndHeight(100%, 80%);
+      @include flexContainer(30px);
+      flex-direction: column;
+
+      p {
+        color: $mainRedColor;
+      }
+
+      :last-child {
+        color: $mainWhiteColor;
+      }
+
+      .link {
+        color: $mainBlueColor;
+        text-decoration: none;
+      }
+    }
+
+    .input-group {
+      position: relative;
+
+      .input {
+        border: solid 1.5px $mainWhiteColor;
+        border-radius: 1rem;
+        background: none;
+        padding: 1rem;
+        font-size: 1rem;
+        color: $mainWhiteColor;
+        -webkit-transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      .user-label {
+        position: absolute;
+        left: 15px;
+        color: $mainWhiteColor;
+        pointer-events: none;
+        -webkit-transform: translateY(1rem);
+        -ms-transform: translateY(1rem);
+        transform: translateY(1rem);
+        -webkit-transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      .input:focus,
+      .input:valid {
+        outline: none;
+        border: 1.5px solid $mainBlueColor;
+      }
+
+      .input:focus ~ label,
+      .input:valid ~ label {
+        -webkit-transform: translateY(-50%) scale(0.8);
+        -ms-transform: translateY(-50%) scale(0.8);
+        transform: translateY(-50%) scale(0.8);
+        background-color: #212121;
+        padding: 0 0.2em;
+        color: $mainBlueColor;
+        font-size: 20px;
+      }
+    }
+  }
+}

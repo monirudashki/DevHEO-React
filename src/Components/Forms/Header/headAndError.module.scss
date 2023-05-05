@@ -4,6 +4,9 @@
 .header-error {
   @include widthAndHeight(100%, 10%);
   @include flexContainer(0);
+  position: absolute;
+  left: 0;
+  top: 0;
   border-bottom: 1px solid $mainWhiteColor;
   justify-content: flex-start;
 
@@ -11,6 +14,8 @@
     @include widthAndHeight(25%, 100%);
     @include flexContainer(0);
     color: $mainWhiteColor;
+    background-color: $mainBlueColor;
+    opacity: 0.9;
     border-right: 1px solid $mainWhiteColor;
     h2 {
       text-align: center;
@@ -26,6 +31,7 @@
     p {
       text-align: center;
       color: $mainWhiteColor;
+      font-size: 24px;
     }
   }
 }

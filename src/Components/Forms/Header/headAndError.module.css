@@ -5,6 +5,9 @@
   justify-content: center;
   align-items: center;
   gap: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
   border-bottom: 1px solid white;
   justify-content: flex-start;
 }
@@ -16,6 +19,8 @@
   align-items: center;
   gap: 0;
   color: white;
+  background-color: rgba(0, 119, 215, 0.8);
+  opacity: 0.9;
   border-right: 1px solid white;
 }
 .header-error .head h2 {
@@ -34,4 +39,5 @@
 .header-error .error p {
   text-align: center;
   color: white;
+  font-size: 24px;
 }/*# sourceMappingURL=headAndError.module.css.map */

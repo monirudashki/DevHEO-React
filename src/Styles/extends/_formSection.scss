@@ -1,0 +1,11 @@
+@use "../mixins" as *;
+@use "../variables" as *;
+
+.form-section-container {
+  @include widthAndHeight(100%, 100vh);
+  @include flexContainer(0);
+  background-color: $mainBlackColor;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}

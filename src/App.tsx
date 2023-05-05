@@ -6,7 +6,7 @@ import { Header } from "Components/Core/Header/Header/Header";
 import { Route, Routes } from "react-router-dom";
 import Home from "Components/Core/Home/HomeComponent/Home";
 import Login from "Components/Auth/Login/LoginComponent/Login";
-import Register from "Components/Auth/Register/Register";
+import Register from "Components/Auth/Register/RegisterComponent/Register";
 import Footer from "Components/Core/Footer/FooterComponent/Footer";
 
 function App() {
