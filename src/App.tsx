@@ -5,7 +5,7 @@ import { AuthProvider } from "./Contexts/AuthContext";
 import { Header } from "Components/Core/Header/Header/Header";
 import { Route, Routes } from "react-router-dom";
 import Home from "Components/Core/Home/HomeComponent/Home";
-import Login from "Components/Auth/Login/Login";
+import Login from "Components/Auth/Login/LoginComponent/Login";
 import Register from "Components/Auth/Register/Register";
 import Footer from "Components/Core/Footer/FooterComponent/Footer";
 
@@ -21,7 +21,6 @@ function App() {
           <Route path="/auth/login" element={<Login />} />
           <Route path="/auth/register" element={<Register />} />
         </Routes>
-
         <Footer />
       </div>
     </AuthProvider>

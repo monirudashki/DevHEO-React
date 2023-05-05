@@ -4,6 +4,8 @@
 .home-container {
   @include widthAndHeight(100%, 100vh);
   @include flexContainer(8%);
+  margin-bottom: 100px;
+  margin-top: 100px;
   //background-color: whitesmoke;
 }
 

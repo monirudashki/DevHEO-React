@@ -1,0 +1,9 @@
+.svg-left {
+  width: 45%;
+  height: 40vh;
+  position: absolute;
+  left: -15%;
+  top: -30%;
+  opacity: 0.8;
+  z-index: -1;
+}/*# sourceMappingURL=leftTopSvg.module.css.map */

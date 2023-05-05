@@ -1,0 +1,60 @@
+@use "../../../Styles/mixins" as *;
+@use "../../../Styles/variables" as *;
+
+.button {
+  width: 10em;
+  position: relative;
+  height: 3.5em;
+  border: 3px ridge $mainBlueColor;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  -webkit-transition: 1s;
+  transition: 1s;
+  border-radius: 0.3em;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: $mainBlackColor;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+}
+
+.button::before {
+  content: "";
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  position: absolute;
+  top: 80%;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: $mainBlackColor;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.button:hover::before,
+.button:hover::after {
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+
+.button:hover {
+  -webkit-box-shadow: inset 0px 0px 25px $mainBlueColor;
+  box-shadow: inset 0px 0px 25px $mainBlueColor;
+}

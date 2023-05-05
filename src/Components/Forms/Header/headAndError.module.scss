@@ -1,0 +1,31 @@
+@use "../../../Styles/variables" as *;
+@use "../../../Styles/mixins" as *;
+
+.header-error {
+  @include widthAndHeight(100%, 10%);
+  @include flexContainer(0);
+  border-bottom: 1px solid $mainWhiteColor;
+  justify-content: flex-start;
+
+  .head {
+    @include widthAndHeight(25%, 100%);
+    @include flexContainer(0);
+    color: $mainWhiteColor;
+    border-right: 1px solid $mainWhiteColor;
+    h2 {
+      text-align: center;
+    }
+  }
+
+  .error {
+    @include widthAndHeight(75%, 100%);
+    @include flexContainer(0);
+    background: $mainRedColor;
+    opacity: 0.7;
+
+    p {
+      text-align: center;
+      color: $mainWhiteColor;
+    }
+  }
+}

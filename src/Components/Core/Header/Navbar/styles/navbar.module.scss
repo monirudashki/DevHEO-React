@@ -5,8 +5,8 @@
   @include widthAndHeight(100%, 20vh);
   @include flexContainer(40%);
   align-items: flex-start;
-  margin-bottom: 100px;
   background: url("../Images/navbar-img.png");
+  z-index: 1000;
 
   div {
     @include widthAndHeight(auto, auto);

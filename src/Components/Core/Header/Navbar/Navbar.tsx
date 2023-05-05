@@ -17,10 +17,6 @@ export const Navbar = () => {
 
   console.log(currentUser);
 
-  // const setActiveStyle = ({ isActive }) => {
-  //   return isActive ? styles["active"] : "none";
-  // };
-
   return (
     <nav className={styles["navbar"]}>
       <div className={styles["logo"]}>

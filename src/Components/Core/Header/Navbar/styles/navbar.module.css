@@ -6,8 +6,8 @@
   align-items: center;
   gap: 40%;
   align-items: flex-start;
-  margin-bottom: 100px;
   background: url("../Images/navbar-img.png");
+  z-index: 1000;
 }
 .navbar div {
   width: auto;

@@ -1,0 +1,10 @@
+@use "../../../../Styles/mixins" as *;
+
+.svg-right {
+  @include widthAndHeight(45%, 40vh);
+  position: absolute;
+  right: -18%;
+  bottom: 10%;
+  opacity: 0.8;
+  z-index: -1;
+}
